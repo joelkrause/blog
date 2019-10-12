@@ -11,11 +11,11 @@ html {
 
 body {
     background: var(--mainColor);
-    color: var(--lightColor);
+    color: var(--lightColor); 
 }
 
 .wrapper {
-    padding: 0 1rem;
+    padding: 0 1rem; 
 
     @include breakpoint(up, lg) {
         margin: 0 auto;
