@@ -1,0 +1,12 @@
+<header class="site__header">
+    <div class="site__header-logo">
+        <a href="{{ '/' | url }}">{{ metadata.title }}</a>
+    </div>
+    <nav class="site__header-nav">
+      <ul>
+        {%- for nav in collections.nav | reverse -%}
+        <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}"><a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a></li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+</header>
