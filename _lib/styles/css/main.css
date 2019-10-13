@@ -498,7 +498,7 @@ a.button {
   --mainColor: #111;
   --lightColor: #ffffff;
   --lightAccentColor: #f8f8f8;
-  --mainFont: 'Space Mono';
+  --mainFont: 'Space';
   --accentFont: 'Space'; }
 
 @font-face {
