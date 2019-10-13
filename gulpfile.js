@@ -3,7 +3,7 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var cleanCSS = require('gulp-clean-css');
 var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
+var terser = require('gulp-terser');
 var pipeline = require('readable-stream').pipeline;
 var rename = require("gulp-rename");
 
@@ -49,7 +49,7 @@ gulp.task('merge-scripts', function () {
 gulp.task('compress-scripts', function () {
     return pipeline(
         gulp.src('_lib/scripts/scripts.min.js'),
-        uglify(),
+        terser(),
         gulp.dest('_lib/scripts')
     );
 });

@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ renderData.title or title or metadata.title }} &mdash; {{ metadata.title }}</title>
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
-    <link rel="stylesheet" href="{{ '/_lib/styles/css/main.min.css' | url }}">
+    {# <link rel="stylesheet" href="{{ '/_lib/styles/css/main.min.css' | url }}"> #}
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    {% set css %}
+      {% include "_lib/styles/css/main.min.css" %}
+    {% endset %}
+    <style>
+      {{ css | safe }}
+    </style>
   </head>
   <body>
     {% include '_header.njk' %}
@@ -16,7 +22,8 @@
     </main>
 
     {% include '_footer.njk' %}
-    {# <script src="{{ '/_lib/scripts/scripts.min.js' | url }}"></script> #}
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="{{ '/_lib/scripts/scripts.min.js' | url }}"></script>
     <!-- Current page: {{ page.url | url }} -->
   </body>
 </html>

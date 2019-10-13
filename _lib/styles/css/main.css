@@ -369,7 +369,8 @@ svg.accent__blob {
     height: 105px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
-    border-radius: 50%; }
+    border-radius: 50%;
+    margin: 0 0 50px; }
   .single-post .page__hero .post__icon {
     margin: 0 0 25px; }
     .single-post .page__hero .post__icon svg {
@@ -410,12 +411,12 @@ a.button {
 
 @font-face {
   font-family: 'Space';
-  src: url("../../fonts/SpaceGrotesk-Regular.woff2") format("woff2"), url("../../fonts/SpaceGrotesk-Regular.woff") format("woff");
+  src: url("/_lib/fonts/SpaceGrotesk-Regular.woff2") format("woff2"), url("/_lib/fonts/SpaceGrotesk-Regular.woff") format("woff");
   font-weight: 400; }
 
 @font-face {
   font-family: 'Space';
-  src: url("../../fonts/SpaceGrotesk-Bold.woff2") format("woff2"), url("../../fonts/SpaceGrotesk-Bold.woff") format("woff");
+  src: url("/_lib/fonts/SpaceGrotesk-Bold.woff2") format("woff2"), url("/_lib/fonts/SpaceGrotesk-Bold.woff") format("woff");
   font-weight: 700; }
 
 * {
