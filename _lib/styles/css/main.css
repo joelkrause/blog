@@ -418,11 +418,6 @@ a.button {
   src: url("../../fonts/SpaceGrotesk-Bold.woff2") format("woff2"), url("../../fonts/SpaceGrotesk-Bold.woff") format("woff");
   font-weight: 700; }
 
-@font-face {
-  font-family: 'Technique';
-  src: url("../../fonts/Technique.woff2") format("woff2"), url("../../fonts/Technique.woff") format("woff");
-  font-weight: 400; }
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -488,11 +483,7 @@ p a {
   top: 0;
   left: 0;
   width: 100%;
-  font-family: var(--accentFont);
-  -webkit-transition: all 0.35s;
-  -o-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s; }
+  font-family: var(--accentFont); }
   @media (min-width: 1024px) {
     .site__header {
       padding: 2rem;
