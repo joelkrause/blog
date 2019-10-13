@@ -1,9 +1,9 @@
 {
   "title": "Joel Krause",
   "url": "https://myurl.com/",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "description": "I'm a passionate front end web developer from Melbourne, Australia",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "I'm a passionate front end web developer from Melbourne, Australia",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "url": "https://myurl.com/feed/feed.xml",

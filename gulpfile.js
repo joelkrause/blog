@@ -5,6 +5,7 @@ var cleanCSS = require('gulp-clean-css');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var pipeline = require('readable-stream').pipeline;
+var rename = require("gulp-rename");
 
 // This compiles the sass files into one
 gulp.task('compile', () => {
@@ -28,6 +29,9 @@ gulp.task('minify-styles', () => {
     return gulp.src('_lib/styles/css/main.css')
         .pipe(cleanCSS({
             compatibility: 'ie8'
+        }))
+        .pipe(rename({
+            suffix: '.min'
         }))
         .pipe(gulp.dest('_lib/styles/css'));
 });

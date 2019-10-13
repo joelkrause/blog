@@ -2,5 +2,6 @@ README.md
 _11ty/
 _lib/styles/scss/**/*.scss
 _lib/styles/css/main.css.map
+_lib/styles/css/main.css
 _lib/scripts/src/**/*.js
 _lib/scripts/scripts.js

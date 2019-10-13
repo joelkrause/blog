@@ -12,6 +12,13 @@
     font-weight: 700;
 }
 
+@font-face {
+    font-family: 'Technique';
+    src: url('../../fonts/Technique.woff2') format('woff2'),
+        url('../../fonts/Technique.woff') format('woff');
+    font-weight: 400;
+}
+
 * {
     box-sizing: border-box;
 }
