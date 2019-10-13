@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Space+Mono:400,700&display=swap");
 *,
 ::after,
 ::before {
@@ -497,7 +498,7 @@ a.button {
   --mainColor: #111;
   --lightColor: #ffffff;
   --lightAccentColor: #f8f8f8;
-  --mainFont: 'Space';
+  --mainFont: 'Space Mono';
   --accentFont: 'Space'; }
 
 @font-face {
@@ -571,7 +572,7 @@ p a {
   font-weight: 700;
   font-size: 1.1rem;
   z-index: 2;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;

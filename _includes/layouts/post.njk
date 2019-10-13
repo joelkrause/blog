@@ -2,8 +2,12 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-<h1>{{ title }}</h1>
-
-{{ content | safe }}
-
-<p><a href="{{ '/' | url }}">← Home</a></p>
+<div class="page__hero">
+  <div class="wrapper">
+    <h1>{{ title }}</h1>
+    <time class="postlist-date" datetime="{{ date | htmlDateString }}">Posted on {{ date | readableDate }}</time>
+  </div>
+</div>
+<div class="wrapper">
+  {{ content | safe }}
+</div>
