@@ -4,12 +4,12 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: heading
-  label: Content
 - type: document
   path: home.md
   label: Home
-  match: "**/*"
+  read_only: false
+- type: heading
+  label: Content
 - type: directory
   path: posts
   label: Posts
