@@ -10,8 +10,8 @@ html {
 }
 
 body {
-  background: var(--mainColor);
-  color: var(--lightColor);
+  color: var(--mainColor);
+  background: var(--lightColor);
 }
 
 .wrapper {
@@ -170,6 +170,7 @@ svg {
   align-content: center;
   justify-content: center;
   padding: 100px 0 5vw;
+  background: var(--lightAccentColor);
 
   @include breakpoint(up, xl) {
     padding: 0;
