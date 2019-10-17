@@ -309,7 +309,7 @@ body {
   @media (min-width: 1024px) {
     .wrapper {
       margin: 0 auto;
-      width: 50vw; } }
+      width: 45vw; } }
 
 [data-animate] {
   opacity: 0;
@@ -577,10 +577,6 @@ p a {
   left: 0;
   width: 100%;
   font-family: var(--accentFont); }
-  @media (min-width: 1024px) {
-    .site__header {
-      padding: 2rem;
-      font-size: 1.2rem; } }
   .scrolling .site__header {
     background: var(--mainColor);
     top: -100%; }
